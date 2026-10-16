@@ -1,0 +1,53 @@
+header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    background-color: skyblue;
+    z-index: 10;
+}
+
+nav ul {
+    display: flex;
+    gap: 100px;
+    font-size: 20px;
+}
+
+#main-banner {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(skyblue, white);
+}
+
+section {
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    z-index:1
+}
+
+#list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+#list li {
+    position: relative;
+}
+
+.badge {
+    position: absolute;
+    background-color: white;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+}
+
+li strong {
+    display: block;
+}
